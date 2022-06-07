@@ -2,6 +2,7 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import Express from 'express';
+import products from './routes/products.js';
 dotenv.config();
 
 //Connection to MongoDB
@@ -13,6 +14,10 @@ mongoose
 //Variables
 const app = Express();
 const port = process.env.PORT || 3005;
+
+//Middlewares
+app.use(Express.json());
+app.use('/api/products', products);
 
 //Routes
 app.get('/api', (req, res) => {
