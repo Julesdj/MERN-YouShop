@@ -26,17 +26,33 @@ code {
     color: var(--color-primary) !important;
 }
 
+.logo {
+    color: var(--color-accent) !important;
+    font-size: 45px !important;
+    font-weight: bold !important;
+}
+
 .icon-small {
     width: 25px !important;
     height: 25px !important;
     color: var(--color-primary) !important;
 }
 
-.atc {
+.btn-addToCart {
     font-size: 1.2rem !important;
     font-weight: bold !important;
 }
 
 .nav-link {
     font-size: 1.8rem !important;
+}
+
+.admin-sideBar {
+    background-color: var(--color-primary) !important;
+}
+
+@media screen and (min-width: 992px) {
+    .admin-sideBar {
+        min-height: 100vh !important;
+    }
 }

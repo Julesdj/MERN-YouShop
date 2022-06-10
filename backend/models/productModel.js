@@ -10,7 +10,6 @@ const Product = mongoose.model(
             required: true,
             minlength: 5,
             maxlength: 255,
-            unique: true,
         },
         image: String,
         price: { type: Number, required: true, min: 0 },

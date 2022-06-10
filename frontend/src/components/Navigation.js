@@ -8,10 +8,11 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import { FaSearch } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
-        <div>
+        <header>
             <Navbar
                 collapseOnSelect
                 expand="lg"
@@ -19,14 +20,7 @@ function Navigation() {
                 className="bg-main"
             >
                 <Container>
-                    <Navbar.Brand
-                        href="/home"
-                        style={{
-                            color: '#ffc300',
-                            fontSize: '50px',
-                            fontWeight: 'bold',
-                        }}
-                    >
+                    <Navbar.Brand as={Link} to="/store/home" className="logo">
                         YouShop
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -54,20 +48,42 @@ function Navigation() {
                             </InputGroup>
                         </Nav>
                         <Nav className="nav-link">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#products">Products</Nav.Link>
-                            <Nav.Link href="#about">About</Nav.Link>
-                            <Nav.Link href="#contact">Contact</Nav.Link>
-                            <Nav.Link href="#login">Login</Nav.Link>
-                            <Nav.Link href="#cart-page">
-                                <BsCart3 style={{ color: '#ffc300' }} />{' '}
-                                <span>0</span>
-                            </Nav.Link>
+                            <Nav.Item eventKey={1}>
+                                <Nav.Link as={Link} to="/store/home">
+                                    Home
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item eventKey={1}>
+                                <Nav.Link as={Link} to="/store/products">
+                                    Products
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item eventKey={1}>
+                                <Nav.Link as={Link} to="/store/about">
+                                    About
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item eventKey={1}>
+                                <Nav.Link as={Link} to="/store/contact">
+                                    Contact
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item eventKey={1}>
+                                <Nav.Link as={Link} to="/store/login">
+                                    Login
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item eventKey={1}>
+                                <Nav.Link as={Link} to="/store/cart">
+                                    <BsCart3 style={{ color: '#ffc300' }} />{' '}
+                                    <span>0</span>
+                                </Nav.Link>
+                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </header>
     );
 }
 export default Navigation;
