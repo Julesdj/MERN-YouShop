@@ -8,6 +8,7 @@ import Login from './Login';
 import Navigation from './Navigation';
 import ProductsList from './admin/ProductsList';
 import CreateProduct from './admin/CreateProduct';
+import ProductPage from './ProductPage';
 
 function Home() {
     return (
@@ -22,6 +23,7 @@ function Home() {
                     path="/store/admin/products"
                     element={<ProductsList />}
                 />
+                <Route path="store/products/:id" element={<ProductPage />} />
                 <Route path="store/products" element={<Products />} />
                 <Route path="store/about" element={<About />} />
                 <Route path="store/contact" element={<Contact />} />
