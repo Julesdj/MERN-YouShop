@@ -10,9 +10,6 @@ import ProductsList from './admin/ProductsList';
 import CreateProduct from './admin/CreateProduct';
 import ProductPage from './ProductPage';
 import Container from 'react-bootstrap/esm/Container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
 import Footer from './Footer';
 
 function Home() {
@@ -35,23 +32,6 @@ function Home() {
                 <Route path="store/login" element={<Login />} />
                 <Route path="store/cart" element={<Cart />} />
             </Routes>
-            <Container>
-                <Row>
-                    <Col>
-                    <Card>
-                        <Card.Img src="/onlineShopping.jpg" alt="person shopping"/>
-                    </Card>
-                    </Col>
-                    <Col>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>YouShop</Card.Title>
-                            <Card.Text>Your #1 Chioce For Online Shopping!</Card.Text>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-                </Row>
-            </Container>
             <Footer/>
         </div>
     );
