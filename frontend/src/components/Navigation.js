@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import { FaSearch } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
@@ -68,6 +69,22 @@ function Navigation() {
                                     Contact
                                 </Nav.Link>
                             </Nav.Item>
+
+                            <NavDropdown title="Admin" id="basic-nav-dropdown">
+                                <NavDropdown.Item
+                                    as={Link}
+                                    to="/store/admin/products"
+                                >
+                                    Products
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item
+                                    as={Link}
+                                    to="/store/admin/products/new"
+                                >
+                                    Create Product
+                                </NavDropdown.Item>
+                            </NavDropdown>
                             <Nav.Item eventKey={1}>
                                 <Nav.Link as={Link} to="/store/login">
                                     Login
