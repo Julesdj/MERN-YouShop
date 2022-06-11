@@ -8,12 +8,12 @@ function About() {
                 <Card.Body style={{textAlign: 'center'}}>
                     <Card.Title>About YouShop</Card.Title>
                     <Card.Subtitle>Your Favorite Online Store</Card.Subtitle>
-                    <Card.Img style={{width: "1080px", height: "720px"}}
+                    <Card.Img style={{width: "270px", height: "360px"}}
                         src="/girl-shopping-phone.jpg"
                         alt="girl shopping on phone"
                     />
                     <Card.Title>Welcome to YouShop. We’re glad you’re here.</Card.Title>
-                    <Card.Text>
+                    <Card.Text style={{width: "85rem", margin: 'auto'}}>
                         YouShop was officially created in 2022 but the idea existed long 
                         before that. It's creators Kokutse Djoguenou, Connor Kline, 
                         and Shawn Greene had conversed about the idea of a shop that suits 
@@ -21,13 +21,13 @@ function About() {
                         it didn't really 'know' it's customer. No E-Commerce platform did, as 
                         far as we knew. So we set out to change that and the result was Youshop. 
                         
-                    <Card.Text>Our goal is to be personal; to help YOU, whoever you are. That's why YouShop asks about what you love. That's why Youshop 
+                    <Card.Text style={{width: "85rem", margin: 'auto'}}>Our goal is to be personal; to help YOU, whoever you are. That's why YouShop asks about what you love. That's why Youshop 
                         donates 30% of it's yearly profits to various charities.</Card.Text>
                         Our goal is to be personal; to help YOU, whoever you are. That's why YouShop asks about what you love. That's why Youshop 
                         donates 30% of it's yearly profits to various charities.
                     </Card.Text>
 
-                    <Card.Text>YouShop is the shopping destination for those looking for items catering to 
+                    <Card.Text style={{width: "85rem", margin: 'auto'}}>YouShop is the shopping destination for those looking for items catering to 
                         your interests. We’re home to a mountain of products in  all sorts of categories, 
                         from those useful to artists to those suited for cooks or those interested in electronics and hiking.
                     </Card.Text>
