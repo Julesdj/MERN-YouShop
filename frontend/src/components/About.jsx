@@ -15,15 +15,24 @@ function About() {
                     <Card.Title>Welcome to YouShop. We’re glad you’re here.</Card.Title>
                     <Card.Text>
                         YouShop was officially created in 2022 but the idea existed long 
-                        before that. While it's creators Kokutse Djoguenou, Connor Kline, 
-                        and Shawn Greene were hanging out one day they had a conversation 
-                        that changed everything. YouShop donates
-                        20% of it's yearly profit to various charities.YouShop is 
-                        the shopping destination for looking for items catering to 
-                        your interests. We’re home to a mountain of products in 
-                        all sorts of categories, from those useful to artists to 
-                        those suited for cooks.
+                        before that. It's creators Kokutse Djoguenou, Connor Kline, 
+                        and Shawn Greene had conversed about the idea of a shop that suits 
+                        one's needs for quite some time. Amazon did this somewhat well, but 
+                        it didn't really 'know' it's customer. No E-Commerce platform did, as 
+                        far as we knew. So we set out to change that and the result was Youshop. 
+                        
+                    <Card.Text>Our goal is to be personal; to help YOU, whoever you are. That's why YouShop asks about what you love. That's why Youshop 
+                        donates 30% of it's yearly profits to various charities.</Card.Text>
+                        Our goal is to be personal; to help YOU, whoever you are. That's why YouShop asks about what you love. That's why Youshop 
+                        donates 30% of it's yearly profits to various charities.
                     </Card.Text>
+
+                    <Card.Text>YouShop is the shopping destination for those looking for items catering to 
+                        your interests. We’re home to a mountain of products in  all sorts of categories, 
+                        from those useful to artists to those suited for cooks or those interested in electronics and hiking.
+                    </Card.Text>
+
+
                     <Card.Text>While you’re here, it’s all about you.</Card.Text>
                 </Card.Body>
             </Card>
