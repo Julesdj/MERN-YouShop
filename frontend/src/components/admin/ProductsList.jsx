@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import { MdDelete } from 'react-icons/md';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function ProductsList() {
     const [products, setProducts] = useState([]);
@@ -49,7 +50,11 @@ function ProductsList() {
                             <td>Status</td>
                             <td>{product.qtyInStock}</td>
                             {/* TODO: Add edit functionality */}
-                            <td>Edit</td>
+                            <td>
+                                <Link to={'/store/admin/products/edit'}>
+                                    Edit
+                                </Link>
+                            </td>
                             <td>
                                 <MdDelete
                                     onClick={(e) =>

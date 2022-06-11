@@ -21,7 +21,11 @@ function Navigation() {
                 className="bg-main"
             >
                 <Container>
-                    <Navbar.Brand as={Link} to="/store/home" className="logo">
+                    <Navbar.Brand
+                        as={Link}
+                        to="/store/products"
+                        className="logo"
+                    >
                         YouShop
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -50,7 +54,7 @@ function Navigation() {
                         </Nav>
                         <Nav className="nav-link">
                             <Nav.Item eventKey={1}>
-                                <Nav.Link as={Link} to="/store/home">
+                                <Nav.Link as={Link} to="/store/products">
                                     Home
                                 </Nav.Link>
                             </Nav.Item>
