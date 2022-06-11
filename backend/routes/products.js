@@ -3,6 +3,7 @@ import Express from 'express';
 import Product from '../models/productModel.js';
 import multer from 'multer';
 import path from 'path';
+import { moveMessagePortToContext } from 'worker_threads';
 
 //Variables
 const products = Express.Router();
@@ -42,11 +43,13 @@ products.get('/', async (req, res) => {
 });
 
 //Create a new product
-products.post('/', upload.single('image'), async (req, res) => {
+// upload.single('image'), form not sending files at the moveMessagePortToContext, will get back to it
+// req.file.filename, change req.body.image
+products.post('/', async (req, res) => {
     //ToDo: Data validation
     let product = new Product({
         name: req.body.name,
-        image: req.file.filename,
+        image: req.body.image,
         price: req.body.price,
         qtyInStock: req.body.qtyInStock,
         description: req.body.description,
@@ -54,6 +57,7 @@ products.post('/', upload.single('image'), async (req, res) => {
     });
 
     product = await product.save();
+    console.log(product);
     res.send(product);
 });
 
@@ -74,7 +78,7 @@ products.put('/:id', async (req, res) => {
         req.params.id,
         {
             name: req.body.name,
-            image: req.file.filename,
+            image: req.body.image,
             price: req.body.price,
             qtyInStock: req.body.qtyInStock,
             description: req.body.description,

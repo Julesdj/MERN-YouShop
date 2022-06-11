@@ -7,7 +7,7 @@ function Contact() {
         <div>
             <Card>
                 <Card.Img variant="top" src="holder.js/100px180"/>
-                <Card.Body>
+                <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title>Contact Us</Card.Title>
                     <Card.Text>Contact YouShop</Card.Text>
                 </Card.Body>
@@ -30,7 +30,7 @@ function Contact() {
                     <Card border='dark'>
                         <Card.Body>
                             <Card.Title>Emails and Customer Service</Card.Title>
-                            <Card.Text>YouShop@email.com</Card.Text>
+                            <Card.Text>YouShop@gmail.com</Card.Text>
                             <Card.Text>YouShopService@email.com</Card.Text>
                             <Card.Text>YouShopOrderInfo@email.com</Card.Text>
                         </Card.Body>
