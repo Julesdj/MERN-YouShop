@@ -6,7 +6,6 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
 
 function CreateProduct() {
     const [name, setName] = useState('');
@@ -162,8 +161,6 @@ function CreateProduct() {
                                     fontWeight: 'bold',
                                 }}
                                 className="bg-accent"
-                                as={Link}
-                                to=""
                             >
                                 Create
                             </Button>
