@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 function Navigation() {
     return (
         <header>
-            <Navbar
+            <Navbar fixed="top"
                 collapseOnSelect
                 expand="lg"
                 variant="dark"
