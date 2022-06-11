@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from 'react-router-dom';
 
 function CreateProduct() {
     const [name, setName] = useState('');
@@ -14,6 +15,7 @@ function CreateProduct() {
     const [tags, setTags] = useState([]);
     const [price, setPrice] = useState(0);
     const [qtyInStock, setQtyInStock] = useState(0);
+    const navigate = useNavigate();
 
     //form Submit
     const handleSubmit = async (event) => {
@@ -27,6 +29,7 @@ function CreateProduct() {
                 price,
                 qtyInStock,
             });
+            navigate('/store/admin/products');
             console.log(data);
         } catch (error) {
             console.error(error.message);
