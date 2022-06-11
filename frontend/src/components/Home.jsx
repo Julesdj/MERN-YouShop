@@ -9,6 +9,7 @@ import Navigation from './Navigation';
 import ProductsList from './admin/ProductsList';
 import CreateProduct from './admin/CreateProduct';
 import ProductPage from './ProductPage';
+import Footer from './Footer';
 
 function Home() {
     return (
@@ -30,6 +31,7 @@ function Home() {
                 <Route path="store/login" element={<Login />} />
                 <Route path="store/cart" element={<Cart />} />
             </Routes>
+            <Footer/>
         </div>
     );
 }
