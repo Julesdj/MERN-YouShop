@@ -2,6 +2,7 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import Express from 'express';
+import path from 'path';
 import products from './routes/products.js';
 dotenv.config();
 
@@ -19,6 +20,13 @@ const port = process.env.PORT || 3005;
 app.use(Express.json());
 app.use(Express.static('./public'));
 app.use('/api/products', products);
+
+//For deploying the app
+const __dirname = path.resolve();
+app.use(Express.static(path.join(__dirname, '/frontend/build')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/frontend/build/index.html'));
+});
 
 //Routes
 app.get('/api', (req, res) => {

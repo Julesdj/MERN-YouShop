@@ -1,0 +1,21 @@
+{
+    "name": "mern-youshop",
+    "version": "1.0.0",
+    "description": "YouShop is our submission for the MERN Stack project. It's an online E-Commerce website much like Amazon, Etsy, and Ebay. The concept is that of a website that's products channel your interests and lifestyle better.",
+    "main": "index.js",
+    "scripts": {
+        "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+        "start": "node backend/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Julesdj/MERN-YouShop.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Julesdj/MERN-YouShop/issues"
+    },
+    "homepage": "https://github.com/Julesdj/MERN-YouShop#readme"
+}

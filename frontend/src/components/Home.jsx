@@ -9,7 +9,7 @@ import Navigation from './Navigation';
 import ProductsList from './admin/ProductsList';
 import CreateProduct from './admin/CreateProduct';
 import ProductPage from './ProductPage';
-import Container from 'react-bootstrap/esm/Container';
+// import Container from 'react-bootstrap/esm/Container';
 import Footer from './Footer';
 import UpdateProduct from './admin/UpdateProduct';
 
