@@ -6,10 +6,10 @@ With contributions from Kokutse Djoguenou, Shawn Greene, and Connor Kline.
 
 # Technologies Used
 
-MongoDB
-Express
-React
-Node
+M-MongoDB
+E-Express
+R-React
+N-Node
 
 # Challenges Faced
 
