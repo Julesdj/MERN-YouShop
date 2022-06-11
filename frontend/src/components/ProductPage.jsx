@@ -60,7 +60,7 @@ function ProductPage() {
                         <div style={{ height: '400px' }}>
                             <Card.Img
                                 variant="top"
-                                src={`/uploads/${product.image}`}
+                                src={`${product.image}`}
                                 style={{
                                     height: '100%',
                                     objectFit: 'contain',
