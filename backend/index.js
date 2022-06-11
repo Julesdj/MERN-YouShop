@@ -17,6 +17,7 @@ const port = process.env.PORT || 3005;
 
 //Middlewares
 app.use(Express.json());
+app.use(Express.static('./public'));
 app.use('/api/products', products);
 
 //Routes
