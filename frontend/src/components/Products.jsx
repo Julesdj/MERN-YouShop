@@ -10,7 +10,7 @@ function Products() {
         <div>
             <Container>
                 <Row>
-                    <Col>
+                    <Col style={{margin: "1em"}}>
                     <Card border="dark">
                         <Card.Img variant="top" src="holder.js/100px180"/>
                         <Card.Body>
@@ -20,7 +20,7 @@ function Products() {
                         <Button variant="warning" size="lg">Add To Cart</Button>
                     </Card>
                     </Col>
-                    <Col>
+                    <Col style={{margin: "1em"}}>
                     <Card border="dark">
                         <Card.Img variant="top" src="holder.js/100px180"/>
                         <Card.Body>
@@ -32,7 +32,7 @@ function Products() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col style={{margin: "1em"}}>
                     <Card border="dark">
                         <Card.Img variant="top" src="holder.js/100px180"/>
                         <Card.Body>
@@ -42,7 +42,7 @@ function Products() {
                         <Button variant="warning" size="lg">Add To Cart</Button>
                     </Card>
                     </Col>
-                    <Col>
+                    <Col style={{margin: "1em"}}>
                     <Card border="dark">
                         <Card.Img variant="top" src="holder.js/100px180"/>
                         <Card.Body>
