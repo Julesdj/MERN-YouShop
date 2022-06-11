@@ -14,8 +14,10 @@ function About() {
                     />
                     <Card.Title>Welcome to YouShop. We’re glad you’re here.</Card.Title>
                     <Card.Text>
-                        YouShop was created in 2022. We our commited to provide
-                        the best service and customer relations. YouShop donates
+                        YouShop was officially created in 2022 but the idea existed long 
+                        before that. While it's creators Kokutse Djoguenou, Connor Kline, 
+                        and Shawn Greene were hanging out one day they had a conversation 
+                        that changed everything. YouShop donates
                         20% of it's yearly profit to various charities.YouShop is 
                         the shopping destination for looking for items catering to 
                         your interests. We’re home to a mountain of products in 
