@@ -22,14 +22,17 @@ function Contact() {
                     </Card>
                     <Card border='dark'>
                         <Card.Body>
-                            <Card.Title>title</Card.Title>
-                            <Card.Text>contact us</Card.Text>
+                            <Card.Title>Address</Card.Title>
+                            <Card.Text>123 River rd. </Card.Text>
+                            <Card.Text>Come tour our warehouse</Card.Text>
                         </Card.Body>
                     </Card>
                     <Card border='dark'>
                         <Card.Body>
-                            <Card.Title>title</Card.Title>
-                            <Card.Text>contact us</Card.Text>
+                            <Card.Title>Emails and Customer Service</Card.Title>
+                            <Card.Text>YouShop@email.com</Card.Text>
+                            <Card.Text>YouShopService@email.com</Card.Text>
+                            <Card.Text>YouShopOrderInfo@email.com</Card.Text>
                         </Card.Body>
                     </Card>
                 </CardGroup>
