@@ -1,7 +1,19 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
 
 function About() {
-    return <div>About</div>;
+    return(
+        <div style={{display: "flex", justifyContent: "center"}}>
+            <Card>
+                <Card.Body style={{textAlign: "center"}}>
+                    <Card.Title>About YouShop</Card.Title>
+                    <Card.Subtitle>Your Favorite Online Store</Card.Subtitle>
+                    <Card.Img src="public/girl-shopping-phone.jpg/100px180" alt="girl shopping on phone"/>
+                    <Card.Text>YouShop was created in 2022. We our commited to provide the best service and customer relations. YouShop donates 20% of it's yearly profit to various charities.</Card.Text>
+                </Card.Body>
+            </Card>
+        </div>
+    )
 }
 
 export default About;
