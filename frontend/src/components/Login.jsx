@@ -11,6 +11,7 @@ function Login() {
                 maxWidth: '600px',
                 margin: '1.5rem auto',
                 padding: '1.5rem',
+                backgroundImage: 'linear-gradient(to right, #B491FF, #78DFFF)'
             }}
         >
             <Form>
@@ -48,13 +49,14 @@ function Login() {
                         width: '100%',
                         fontSize: '1.5rem',
                         fontWeight: 'bold',
+                        backgroundImage: 'linear-gradient(to left, #B491FF, #78DFFF)',
                     }}
                     className="bg-accent mb-4"
                 >
                     Login
                 </Button>
                 <p>
-                    Don't have an Account? <a href="/#">SIGN UP</a>
+                    Not a member? <a href="/#">Sign up.</a>
                 </p>
             </Form>
         </div>
