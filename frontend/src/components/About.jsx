@@ -8,8 +8,8 @@ function About() {
                 <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title>About YouShop</Card.Title>
                     <Card.Subtitle>Your Favorite Online Store</Card.Subtitle>
-                    <Card.Img
-                        src="public/girl-shopping-phone.jpg/100px180"
+                    <Card.Img style={{width: "1080px", height: "720px"}}
+                        src="/girl-shopping-phone.jpg"
                         alt="girl shopping on phone"
                     />
                     <Card.Text>
