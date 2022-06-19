@@ -3,11 +3,11 @@ import React from 'react';
 
 function Footer() {
     return <div className="main-footer">
-        <div className="container"> 
+        <div className="container" style={{display: 'flex'}}> 
 
         <div className='row'>
         <h4>Information</h4>
-        <ul style={{listStyleType: 'none', display: 'flex'}}>
+        <ul style={{listStyleType: 'none'}}>
             <li>FAQ</li>
             <li>Returns</li>
             <li>Shipping and Payment</li>
