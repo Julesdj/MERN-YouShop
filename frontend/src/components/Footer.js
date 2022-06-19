@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
     return <div className="main-footer">
-        <div className="container" style={{display: 'flex'}}> 
+        <div className="container" style={{display: 'flex', backgroundColor: 'black', color: 'white'}}> 
 
         <div className='row'>
         <h4>Information</h4>
@@ -29,9 +29,7 @@ function Footer() {
             <li>Phone Number:</li>
         </ul></div>
         
-        <div className='row'></div>
-        <h4>Socials</h4></div>
-        
+        </div>
     </div>;
 }
 export default Footer;
