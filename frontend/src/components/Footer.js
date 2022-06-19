@@ -2,7 +2,7 @@
 import React from 'react';
 
 function Footer() {
-    return <div className="main-footer">
+    return <div className="main-footer" fixed='bottom' width='100%'>
         <div className="container" style={{display: 'flex', backgroundColor: 'black', color: 'white'}}> 
 
         <div className='row'>
