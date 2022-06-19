@@ -7,7 +7,7 @@ function Footer() {
 
         <div className='row'>
         <h4>Information</h4>
-        <ul style={{listStyleType: 'none'}}>
+        <ul style={{listStyleType: 'none', display: 'flex'}}>
             <li>FAQ</li>
             <li>Returns</li>
             <li>Shipping and Payment</li>
