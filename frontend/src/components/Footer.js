@@ -25,8 +25,8 @@ function Footer() {
         <div className='row'>
             <h4>Contact Us</h4>
         <ul style={{listStyleType: 'none'}}>
-            <li>Email:</li>
-            <li>Phone Number:</li>
+            <li>Email:(123)-456-7899</li>
+            <li>Phone Number:YouShopService@email.com</li>
         </ul></div>
         
         </div>
