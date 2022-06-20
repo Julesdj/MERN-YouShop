@@ -7,6 +7,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge'
 import { FaSearch } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
@@ -98,7 +99,7 @@ function Navigation() {
                                 <Nav.Link as={Link} to="/store/cart">
                                     Cart
                                     <BsCart3 style={{ color: '#ffc300' }} />{' '}
-                                    <span>0</span>
+                                    <Badge bg="danger">0</Badge>
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
