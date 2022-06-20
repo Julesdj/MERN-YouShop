@@ -61,7 +61,7 @@ function ProductPage() {
                
                  
                         <div>
-                            <div style={{ display: 'flex' }}>
+                            <div style={{ display: 'flex', justifyContent: 'center'}}>
                                 <h1>{product.name}</h1>
                                 <h7>Tags: {product.tags}</h7>
                             </div>
