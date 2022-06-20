@@ -103,7 +103,7 @@ function Navigation() {
                             <Nav.Item eventKey={1}>
                                 <Nav.Link as={Link} to="/store/cart">
                                     Cart
-                                    <BsCart3 style={{ color: '#ffc300' }} />{' '}
+                                    <BsCart3 style={{ color: '#B491FF' }} />{' '}
                                     <Badge onClick={handleClick} bg="danger">0</Badge>
                                 </Nav.Link>
                             </Nav.Item>
