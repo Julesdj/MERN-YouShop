@@ -68,13 +68,17 @@ function ProductPage() {
                             />
                         </div>
                     </Col>
-                    <Col sm={4}><Card>
+                    <Col sm={4}>
+                        <div>
+                    <Card>
                         <Card.Body>
                             <Card.Title>
                             ${product.name}
                             </Card.Title>
                         </Card.Body>
-                    </Card></Col>
+                    </Card>
+                        </div>
+                    </Col>
                     
                 </Row>
             </Container>
