@@ -17,7 +17,7 @@ function ProductCard({ product }) {
                 </Link>
                 <Card.Body>
                     <Link to={`/store/products/${product._id}`}>
-                        <Card.Title>{product.name}</Card.Title>
+                        <Card.Title style={{color: 'black'}}>{product.name}</Card.Title>
                     </Link>
                     <Card.Text>{product.tags}</Card.Text>
                     <div className="d-flex just justify-content-between align-items-center">
@@ -29,7 +29,7 @@ function ProductCard({ product }) {
                         >
                             ${product.price}
                         </Card.Text>
-                        <Button onClick={handleClick} variant="dark" className="bg-accent atc">
+                        <Button  onClick={handleClick} style={{margin: '0'}} variant="dark" className="bg-accent atc">
                             Add to Cart
                         </Button>
                     </div>
