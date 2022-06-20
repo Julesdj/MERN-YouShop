@@ -57,21 +57,12 @@ function ProductPage() {
             
                 
                     
-                        <div style={{ height: '400px' }}>
-                            <Card.Img
-                                variant="top"
-                                src={`${product.image}`}
-                                style={{
-                                    height: '100%',
-                                    objectFit: 'contain',
-                                }}
-                            />
-                        </div>
+                        <img src={`${product.image}`} style={{ height: '400px' }}></img>
                
                  
                         <div>
-                                <h4>{product.name}</h4>
-                                <h4>{product.price}</h4>
+                                <h1>{product.name}</h1>
+                                <h3 style={{color: 'gray'}}>{product.price}</h3>
                                 <h4>{product.qtyInStock}</h4>
                                 <h4>{product.description}</h4>
                             
