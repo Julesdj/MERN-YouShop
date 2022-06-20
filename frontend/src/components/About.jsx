@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: 'transparent'}}>
-                <div style={{textAlign: 'center'}}>
+                <div style={{textAlign: 'center', marginTop: '30vh'}}>
                     <div>
                         About YouShop
                         <br></br>   
