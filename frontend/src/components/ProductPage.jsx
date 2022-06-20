@@ -65,11 +65,11 @@ function ProductPage() {
                                 <h1 style={{ fontSize: '7rem'}}>{product.name}</h1>
                                 <h7 style={{fontSize: '1rem'}}>Tags: {product.tags}</h7>
                             </div>
+                            <div style={{margin: 'auto'}}>
                                 <h3 style={{color: 'gray'}}>${product.price}</h3>
-                                <h5>{product.qtyInStock}</h5>
+                                <h5>Quantity in Stock:{product.qtyInStock}</h5>
                                 <h5 style={{width: '50%'}}>{product.description}</h5>
-                            
-                            
+                            </div>
                         </div>
                     
                     
