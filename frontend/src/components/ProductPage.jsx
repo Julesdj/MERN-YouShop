@@ -71,10 +71,11 @@ function ProductPage() {
                     <Col sm={4}>
                         <div>
                     <Card>
-                        <Card.Body>
-                            <Card.Title>
+                    <Card.Title>
                             ${product.name}
                             </Card.Title>
+                        <Card.Body>
+                            
                         </Card.Body>
                     </Card>
                         </div>
