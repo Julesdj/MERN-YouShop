@@ -68,24 +68,18 @@ function ProductPage() {
                             />
                         </div>
                     </Col>
+                    <Col sm={4}>
+                        <div>
                     <Card>
-                <Card.Body>
-                    <Card.Text>{product.tags}</Card.Text>
-                    <div className="d-flex just justify-content-between align-items-center">
-                        <Card.Text
-                            style={{
-                                fontWeight: 'bold',
-                                fontSize: '1.5rem',
-                            }}
-                        >
-                            ${product.price}
-                        </Card.Text>
-                        <Button variant="dark" className="bg-accent atc">
-                            Add to Cart
-                        </Button>
-                    </div>
-                </Card.Body>
-            </Card>
+                    <Card.Title>
+                            ${product.name}
+                            </Card.Title>
+                        <Card.Body>
+                            
+                        </Card.Body>
+                    </Card>
+                        </div>
+                    </Col>
                     
                 </Row>
             </Container>
