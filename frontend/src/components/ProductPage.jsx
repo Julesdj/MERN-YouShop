@@ -62,8 +62,8 @@ function ProductPage() {
                  
                         <div>
                             <div style={{ display: 'flex', justifyContent: 'center', fontFamily: 'lato'}}>
-                                <h1>{product.name}</h1>
-                                <h7>Tags: {product.tags}</h7>
+                                <h1 style={{ fontSize: '7rem'}}>{product.name}</h1>
+                                <h7 style={{fontSize: '1rem'}}>Tags: {product.tags}</h7>
                             </div>
                                 <h3 style={{color: 'gray'}}>${product.price}</h3>
                                 <h5>{product.qtyInStock}</h5>
