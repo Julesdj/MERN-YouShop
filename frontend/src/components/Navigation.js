@@ -96,6 +96,7 @@ function Navigation() {
                             </Nav.Item>
                             <Nav.Item eventKey={1}>
                                 <Nav.Link as={Link} to="/store/cart">
+                                    Cart
                                     <BsCart3 style={{ color: '#ffc300' }} />{' '}
                                     <span>0</span>
                                 </Nav.Link>
