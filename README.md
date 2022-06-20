@@ -11,10 +11,11 @@ E-Express
 R-React
 N-Node
 
-React-bootstrap, 
+React-bootstrap,
 React-router-dom,
 axios,
 multer
+mongoose
 
 # Challenges Faced
 
@@ -26,4 +27,25 @@ In the future, when submitting something like this to employers we'd like to go 
 
 In order to use this project on your own computer you first need to fork from the repository <a href='https://github.com/Julesdj/MERN-YouShop.git'>here.</a>
 
-From there enter your terminal, cd into whichever directory holds this project (simply typing the start of the directory name and pressing tab will autocomplete for you), and cd into the project folder. Use 'npm install' to install the required packages and 'npm start' to start the project in the default browser.
+From there enter your terminal, cd into whichever directory holds this project (simply typing the start of the directory name and pressing tab will autocomplete for you), and cd into the project folder.
+
+Use 'npm run build' to create a production build of the project. That'll install the required packages and running 'npm start' from the main folder afterward will start the project in the default browser.
+
+In short:
+
+1. Enter your terminal.
+2. CD into the directory you wish to install this project in.
+3. Fork <a href='https://github.com/Julesdj/MERN-YouShop.git'>this</a> repository.
+4. Copy the link provided.
+5. Type 'git clone' and the link you were given, then press enter.
+6. Wait for the repository to finish being loaded to your computer.
+7. CD into the project folder, then type 'Code .' to open the project in your IDE of choice.
+8. Add a file into the main project folder within your IDE, making sure to name it '.env' and pasting the below code into the new file. If this isn't done the project will NOT run correctly, or even at all.
+
+PORT=3001
+MONGO_URI='mongodb+srv://YouShop:YouShop@youshop.dq9rq.mongodb.net/?retryWrites=true&w=majority'
+
+9. Type npm run build in the terminal and wait for it to create an optimized production build of the project. This is what will allow you to actually see everything in action. Otherwise errors such as 'no index.html detected' will be thrown in the browser on the next step, alongside terminal errors due to dependencies missing.
+10. Type npm start and wait for the server to start.
+11. Go to your browser and type http://localhost:3001/ into the address bar. In the past, the project would go to the default browser and open itself, but that had to be removed due to issues with heroku deployment.
+12. Enjoy looking through our project: Youshop!
