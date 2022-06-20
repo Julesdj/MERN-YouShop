@@ -72,7 +72,7 @@ function ProductPage() {
                     <Card>
                         <Card.Body>
                             <Card.Title>
-                            {product.name}
+                            ${product.name}
                             </Card.Title>
                         </Card.Body>
                     </Card>
