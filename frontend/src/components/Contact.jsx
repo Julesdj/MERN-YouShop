@@ -13,7 +13,7 @@ function Contact() {
                 
 
                  <div>
-                    Phone Numbers
+                    <h2>Phone Numbers</h2>
                     (123)-456-7899 YouShop Office
                     (123)-456-7898 YouShop Customer Service
                     (123)-456-7897 YouShop Returns and Order Info
