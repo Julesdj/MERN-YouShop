@@ -4,6 +4,11 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 function ProductCard({ product }) {
+
+    const handleClick = () => {
+        console.log('you clicked it')
+    }
+
     return (
         <div>
             <Card>
@@ -24,7 +29,7 @@ function ProductCard({ product }) {
                         >
                             ${product.price}
                         </Card.Text>
-                        <Button variant="dark" className="bg-accent atc">
+                        <Button onClick={handleClick} variant="dark" className="bg-accent atc">
                             Add to Cart
                         </Button>
                     </div>
