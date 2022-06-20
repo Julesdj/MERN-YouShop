@@ -15,7 +15,7 @@ import UpdateProduct from './admin/UpdateProduct';
 
 function Home() {
     return (
-        <div>
+        <div style={{backgroundColor: '#B491FF'}}>
             <Navigation />
             <Routes>
                 <Route
