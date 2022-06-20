@@ -3,8 +3,8 @@ import Card from 'react-bootstrap/Card';
 
 function About() {
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#B491FF'}}>
-            <Card>
+        <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#B491FF', height: '100vh'}}>
+            <Card style={{backgroundColor: 'transparent'}}>
                 <Card.Body style={{textAlign: 'center'}}>
                     <Card.Title>About YouShop</Card.Title>
                     <Card.Subtitle>Your Favorite Online Store</Card.Subtitle>
