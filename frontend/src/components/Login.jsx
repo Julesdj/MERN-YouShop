@@ -10,8 +10,7 @@ function Login() {
             style={{
                 maxWidth: '600px',
                 margin: '1.5rem auto',
-                padding: '1.5rem',
-                backgroundImage: 'linear-gradient(to right, #B491FF, #78DFFF)'
+                padding: '1.5rem'
             }}
         >
             <Form>

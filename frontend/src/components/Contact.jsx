@@ -5,7 +5,7 @@ import CardGroup from 'react-bootstrap/CardGroup'
 function Contact() {
     return(
         <div>
-            <Card style={{backgroundColor: '#B491FF'}}>
+            <Card>
                 <Card.Img variant="top" src="holder.js/100px180"/>
                 <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title>Contact Us</Card.Title>

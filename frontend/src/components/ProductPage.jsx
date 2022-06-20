@@ -53,7 +53,7 @@ function ProductPage() {
     ) : error ? (
         <div>{error}</div>
     ) : (
-        <div style={{ textAlign: 'center', backgroundColor: '#B491FF', height: '100vh'}}>
+        <div style={{ textAlign: 'center'}}>
             
                 
                     
