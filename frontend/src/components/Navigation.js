@@ -104,7 +104,7 @@ function Navigation() {
                                 <Nav.Link as={Link} to="/store/cart">
                                     Cart
                                     <BsCart3 style={{ color: '#B491FF' }} />{' '}
-                                    <Badge onClick={handleClick} bg="danger">0</Badge>
+                                    <Badge onClick={handleClick}>0</Badge>
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
