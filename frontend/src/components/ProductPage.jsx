@@ -54,9 +54,9 @@ function ProductPage() {
         <div>{error}</div>
     ) : (
         <div>
-            <Container>
-                <Row>
-                    <Col sm={8}>
+            
+                
+                    
                         <div style={{ height: '400px' }}>
                             <Card.Img
                                 variant="top"
@@ -67,17 +67,17 @@ function ProductPage() {
                                 }}
                             />
                         </div>
-                    </Col>
-                    <Col sm={4}>
+               
+                 
                         <div>
-                                <h4>A new test. Cmon now.</h4>
+                                <h4>{product.name}</h4>
                             
                             
                         </div>
-                    </Col>
                     
-                </Row>
-            </Container>
+                    
+                
+            
         </div>
     );
 }
