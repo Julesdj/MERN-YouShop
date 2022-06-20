@@ -71,6 +71,9 @@ function ProductPage() {
                  
                         <div>
                                 <h4>{product.name}</h4>
+                                <h4>{product.price}</h4>
+                                <h4>{product.qtyInStock}</h4>
+                                <h4>{product.description}</h4>
                             
                             
                         </div>
