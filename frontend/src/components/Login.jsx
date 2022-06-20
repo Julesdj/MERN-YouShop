@@ -8,9 +8,12 @@ function Login() {
     return (
         <div
             style={{
+                backgroundColor: 'white',
                 maxWidth: '600px',
                 margin: '1.5rem auto',
-                padding: '1.5rem'
+                padding: '1.5rem',
+                borderStyle: 'hidden',
+                borderRadius: '25px'
             }}
         >
             <Form>
