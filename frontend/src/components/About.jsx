@@ -3,9 +3,9 @@ import Card from 'react-bootstrap/Card';
 
 function About() {
     return (
-        <div style={{ display: 'flex', justifyContent: 'center'}}>
+        <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#B491FF'}}>
             <Card>
-                <Card.Body style={{textAlign: 'center', backgroundColor: '#B491FF'}}>
+                <Card.Body style={{textAlign: 'center'}}>
                     <Card.Title>About YouShop</Card.Title>
                     <Card.Subtitle>Your Favorite Online Store</Card.Subtitle>
                     <Card.Img style={{width: "270px", height: "320px"}}
