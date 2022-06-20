@@ -70,7 +70,7 @@ function ProductPage() {
                     </Col>
                     <Col sm={4}>
                         <div>
-                                <h4>${product.name}</h4>
+                                <h4>A new test. Cmon now.</h4>
                             
                             
                         </div>
