@@ -37,7 +37,7 @@ function Home() {
                 <Route path="store/login" element={<Login />} />
                 <Route path="store/cart" element={<Cart />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
