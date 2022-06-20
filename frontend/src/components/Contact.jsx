@@ -4,16 +4,15 @@ function Contact() {
     return(
         <div>
             <div>
-
-                <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center' }}>
                     <div>
                         Contact Us
                         <br></br>
                         Contact YouShop
                     </div>
-                </div>
+                
 
-                <div>
+                 <div>
                     Phone Numbers
                     (123)-456-7899 YouShop Office
                     (123)-456-7898 YouShop Customer Service
@@ -33,7 +32,7 @@ function Contact() {
                     YouShopService@email.com
                     YouShopOrderInfo@email.com
                 </div>
-                
+            </div>
             </div>
         </div>
     )
