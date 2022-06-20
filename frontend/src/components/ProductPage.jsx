@@ -53,7 +53,7 @@ function ProductPage() {
     ) : error ? (
         <div>{error}</div>
     ) : (
-        <div>
+        <div style={{ textAlign: 'center' }}>
             
                 
                     
@@ -61,10 +61,13 @@ function ProductPage() {
                
                  
                         <div>
+                            <div style={{ display: 'flex' }}>
                                 <h1>{product.name}</h1>
-                                <h3 style={{color: 'gray'}}>{product.price}</h3>
-                                <h4>{product.qtyInStock}</h4>
-                                <h4>{product.description}</h4>
+                                <h7>Tags: {product.tags}</h7>
+                            </div>
+                                <h3 style={{color: 'gray'}}>${product.price}</h3>
+                                <h5>{product.qtyInStock}</h5>
+                                <h5>{product.description}</h5>
                             
                             
                         </div>
