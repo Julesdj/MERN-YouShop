@@ -8,7 +8,7 @@ function About() {
                 <Card.Body style={{textAlign: 'center', backgroundColor: '#B491FF'}}>
                     <Card.Title>About YouShop</Card.Title>
                     <Card.Subtitle>Your Favorite Online Store</Card.Subtitle>
-                    <Card.Img style={{width: "270px", height: "360px"}}
+                    <Card.Img style={{width: "270px", height: "320px"}}
                         src="/girl-shopping-phone.jpg"
                         alt="girl shopping on phone"
                     />

@@ -2,8 +2,8 @@
 import React from 'react';
 
 function Footer() {
-    return <div className="main-footer" style={{width: '100%', position: 'fixed', left: '0', bottom: '0', margin: '0', padding: '0'}}>
-        <div className="container" style={{display: 'flex', backgroundColor: 'black', width: '100vw', color: 'white', justifyContent: 'center', margin: '0', padding: '0'}}> 
+    return <div className="main-footer" style={{width: '100%', position: 'fixed', bottom: '0', margin: '0', padding: '0'}}>
+        <div className="container" style={{display: 'flex', backgroundColor: 'black', color: 'white', justifyContent: 'center', margin: '0', padding: '0', fontSize: '12px', height: '15vh'}}> 
 
         <div className='row'>
         <h4>Information</h4>
