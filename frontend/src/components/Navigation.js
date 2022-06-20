@@ -13,6 +13,11 @@ import { BsCart3 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
+    const handleClick = () => {
+        for(let i = 0; i > 100; i++) {
+            console.log('added')
+        }
+    }
     return (
         <header>
             <Navbar fixed="top"
@@ -99,7 +104,7 @@ function Navigation() {
                                 <Nav.Link as={Link} to="/store/cart">
                                     Cart
                                     <BsCart3 style={{ color: '#ffc300' }} />{' '}
-                                    <Badge bg="danger">0</Badge>
+                                    <Badge onClick={handleClick} bg="danger">0</Badge>
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
