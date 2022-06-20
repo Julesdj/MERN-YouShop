@@ -1,6 +1,6 @@
 # MERN-YouShop
 
-YouShop is our submission for the MERN Stack project. It's an online E-Commerce website much like Amazon, Etsy, and Ebay. The concept is that of a website that's products channel your interests and lifestyle better.
+YouShop is our submission for the MERN Stack project. It's an online E-Commerce website much like Amazon, Etsy, and Ebay. You can updated and delete products. Also this website has many different pages with good styling. The concept is that of a website that's products channel your interests and lifestyle better. For this website we mostly used react-bootstrap and react-router-dom. React-bootstrap is a very useful tool, and it helped us create a functional and well styled Navbar.
 
 With contributions from Kokutse Djoguenou, Shawn Greene, and Connor Kline.
 
@@ -10,6 +10,11 @@ M-MongoDB
 E-Express
 R-React
 N-Node
+
+React-bootstrap, 
+React-router-dom,
+axios,
+multer
 
 # Challenges Faced
 

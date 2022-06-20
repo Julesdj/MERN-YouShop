@@ -10,7 +10,7 @@ import ProductsList from './admin/ProductsList';
 import CreateProduct from './admin/CreateProduct';
 import ProductPage from './ProductPage';
 // import Container from 'react-bootstrap/esm/Container';
-import Footer from './Footer';
+// import Footer from './Footer';
 import UpdateProduct from './admin/UpdateProduct';
 
 function Home() {
@@ -37,7 +37,7 @@ function Home() {
                 <Route path="store/login" element={<Login />} />
                 <Route path="store/cart" element={<Cart />} />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
