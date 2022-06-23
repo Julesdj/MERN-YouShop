@@ -43,7 +43,7 @@ In short:
 8. Add a file into the main project folder within your IDE, making sure to name it '.env' and pasting the below code into the new file. If this isn't done the project will NOT run correctly, or even at all.
 
 PORT=3001
-MONGO_URI='mongodb+srv://YouShop:YouShop@youshop.dq9rq.mongodb.net/?retryWrites=true&w=majority'
+MONGO_URI= [Create and Paste your own MongoDB link here.]
 
 9. Type npm run build in the terminal and wait for it to create an optimized production build of the project. This is what will allow you to actually see everything in action. Otherwise errors such as 'no index.html detected' will be thrown in the browser on the next step, alongside terminal errors due to dependencies missing.
 10. Type npm start and wait for the server to start.
