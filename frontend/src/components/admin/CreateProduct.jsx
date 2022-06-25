@@ -158,12 +158,7 @@ function CreateProduct() {
                                 variant="dark"
                                 type="submit"
                                 size="lg"
-                                style={{
-                                    width: '100%',
-                                    fontSize: '1.5rem',
-                                    fontWeight: 'bold',
-                                }}
-                                className="bg-accent"
+                                className="bg-accent btn-lg"
                             >
                                 Create
                             </Button>
