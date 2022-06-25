@@ -63,7 +63,7 @@ code {
 }
 
 .img-thumbnail {
-    height: 50px;
+    height: 50px !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -72,6 +72,6 @@ code {
     }
 
     .img-thumbnail {
-        height: 80px;
+        height: 80px !important;
     }
 }
