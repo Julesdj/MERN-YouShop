@@ -8,6 +8,7 @@ import { Store } from './cartContext/Store';
 function ProductCard({ product }) {
     // Add To Cart button
     const { state, dispatch: ctxDispatch } = useContext(Store);
+    const { cart } = state;
     const addToCartHandler = async () => {
         const itemExists = cart.cartItems.find(
             (item) => item._id === product._id
