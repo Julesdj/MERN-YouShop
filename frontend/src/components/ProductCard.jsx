@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import { Store } from './cartContext/Store';
 
 function ProductCard({ product }) {
-
-    const handleClick = () => {
-        console.log('you clicked it')
-    }
+    // Add To Cart button
+    const { state, dispatch: ctxDispatch } = useContext(Store);
+    const addToCartHandler = () => {
+        ctxDispatch({
+            type: 'CART_ADD_ITEM',
+            payload: { ...product, quantity: 1 },
+        });
+    };
 
     return (
         <div>
@@ -17,7 +22,9 @@ function ProductCard({ product }) {
                 </Link>
                 <Card.Body>
                     <Link to={`/store/products/${product._id}`}>
-                        <Card.Title style={{color: 'black'}}>{product.name}</Card.Title>
+                        <Card.Title style={{ color: 'black' }}>
+                            {product.name}
+                        </Card.Title>
                     </Link>
                     <Card.Text>{product.tags}</Card.Text>
                     <div className="d-flex just justify-content-between align-items-center">
@@ -29,7 +36,11 @@ function ProductCard({ product }) {
                         >
                             ${product.price}
                         </Card.Text>
-                        <Button  onClick={handleClick} style={{margin: '0'}} variant="dark" className="bg-accent atc">
+                        <Button
+                            variant="dark"
+                            className="bg-accent atc"
+                            onClick={addToCartHandler}
+                        >
                             Add to Cart
                         </Button>
                     </div>

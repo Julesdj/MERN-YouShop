@@ -1,5 +1,5 @@
 //imports
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -7,20 +7,19 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge'
+import Badge from 'react-bootstrap/Badge';
 import { FaSearch } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { Store } from './cartContext/Store';
 
 function Navigation() {
-    const handleClick = () => {
-        for(let i = 0; i > 100; i++) {
-            console.log('added')
-        }
-    }
+    const { state } = useContext(Store);
+    const { cart } = state;
     return (
         <header>
-            <Navbar fixed="top"
+            <Navbar
+                fixed="top"
                 collapseOnSelect
                 expand="lg"
                 variant="dark"
@@ -102,9 +101,10 @@ function Navigation() {
                             </Nav.Item>
                             <Nav.Item eventKey={1}>
                                 <Nav.Link as={Link} to="/store/cart">
-                                    Cart
                                     <BsCart3 style={{ color: '#B491FF' }} />{' '}
-                                    <Badge onClick={handleClick}>0</Badge>
+                                    {cart.cartItems.length > 0 && (
+                                        <Badge>{cart.cartItems.length}</Badge>
+                                    )}
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
