@@ -103,7 +103,15 @@ function Navigation() {
                                 <Nav.Link as={Link} to="/store/cart">
                                     <BsCart3 style={{ color: '#B491FF' }} />{' '}
                                     {cart.cartItems.length > 0 && (
-                                        <Badge>{cart.cartItems.length}</Badge>
+                                        <Badge>
+                                            {cart.cartItems.reduce(
+                                                (inc, current) =>
+                                                    // inc for increment, current for existing quantity
+                                                    inc + current.quantity,
+                                                // default value 0
+                                                0
+                                            )}
+                                        </Badge>
                                     )}
                                 </Nav.Link>
                             </Nav.Item>

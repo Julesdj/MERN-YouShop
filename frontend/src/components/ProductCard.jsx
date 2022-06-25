@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -7,10 +8,19 @@ import { Store } from './cartContext/Store';
 function ProductCard({ product }) {
     // Add To Cart button
     const { state, dispatch: ctxDispatch } = useContext(Store);
-    const addToCartHandler = () => {
+    const addToCartHandler = async () => {
+        const itemExists = cart.cartItems.find(
+            (item) => item._id === product._id
+        );
+        const quantity = itemExists ? itemExists.quantity + 1 : 1;
+        const { data } = await axios.get(`/api/products/${product._id}`);
+        if (data.qtyInStock < quantity) {
+            window.alert('Sorry, the product is out of stock');
+            return;
+        }
         ctxDispatch({
             type: 'CART_ADD_ITEM',
-            payload: { ...product, quantity: 1 },
+            payload: { ...product, quantity },
         });
     };
 
