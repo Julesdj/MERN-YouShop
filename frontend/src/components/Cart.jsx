@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
-import { Store } from '../context/reactContext/store';
+import { Store } from './cartContext/Store';
 import { Link, useNavigate } from 'react-router-dom';
 import { BsTrash } from 'react-icons/bs';
 import { TbMinus, TbPlus } from 'react-icons/tb';
