@@ -4,6 +4,8 @@ YouShop is our submission for the MERN Stack project. It's an online E-Commerce 
 
 With contributions from Kokutse Djoguenou, Shawn Greene, and Connor Kline.
 
+![alt YouShop Screen shot](./frontend/public/Screen%20Shot.png)
+
 ## Technologies Used
 
 M-MongoDB
