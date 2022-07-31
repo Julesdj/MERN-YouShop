@@ -27,7 +27,7 @@ function ProductsList() {
     }, [productId]);
 
     return (
-        <div style={{backgroundColor: 'white'}}>
+        <div className="container">
             <Table responsive>
                 <thead>
                     <tr>

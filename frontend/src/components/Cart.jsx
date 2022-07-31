@@ -63,6 +63,7 @@ function Cart() {
                                                     className="img-fluid rounded img-thumbnail"
                                                 />{' '}
                                                 <Link
+                                                    className="link"
                                                     to={`/store/products/${item._id}`}
                                                 >
                                                     {item.name}

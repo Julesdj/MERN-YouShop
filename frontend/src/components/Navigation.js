@@ -7,7 +7,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
 import { FaSearch } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
@@ -17,9 +16,8 @@ function Navigation() {
     const { state } = useContext(Store);
     const { cart } = state;
     return (
-        <header>
+        <header className="header">
             <Navbar
-                fixed="top"
                 collapseOnSelect
                 expand="lg"
                 variant="dark"
@@ -103,7 +101,7 @@ function Navigation() {
                                 <Nav.Link as={Link} to="/store/cart">
                                     <BsCart3 style={{ color: '#B491FF' }} />{' '}
                                     {cart.cartItems.length > 0 && (
-                                        <Badge>
+                                        <span className="badge">
                                             {cart.cartItems.reduce(
                                                 (inc, current) =>
                                                     // inc for increment, current for existing quantity
@@ -111,7 +109,7 @@ function Navigation() {
                                                 // default value 0
                                                 0
                                             )}
-                                        </Badge>
+                                        </span>
                                     )}
                                 </Nav.Link>
                             </Nav.Item>

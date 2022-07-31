@@ -4,7 +4,7 @@ YouShop is our submission for the MERN Stack project. It's an online E-Commerce 
 
 With contributions from Kokutse Djoguenou, Shawn Greene, and Connor Kline.
 
-# Technologies Used
+## Technologies Used
 
 M-MongoDB
 E-Express
@@ -17,13 +17,13 @@ axios,
 multer
 mongoose
 
-# Challenges Faced
+## Challenges Faced
 
 The implementation of some of the style elements used in our Figma mockup. Shawn Greene did a good amount of the Figma part, though some features couldn't be put in due to constraints.
 
 In the future, when submitting something like this to employers we'd like to go back and add some of the features that would really differentiate this from other online E-Commerce websites in the space. Initial ideas proposed at the beginning of the project included things such as having an interest quiz available and tags on every product and storefront which took from that quiz's answers.
 
-# Getting Started
+## Getting Started
 
 In order to use this project on your own computer you first need to fork from the repository <a href='https://github.com/Julesdj/MERN-YouShop.git'>here.</a>
 

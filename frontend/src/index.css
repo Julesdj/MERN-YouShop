@@ -1,6 +1,6 @@
 :root {
     --color-accent: #b491ff;
-    --color-primary: #000000;
+    --color-primary: hsl(230, 17%, 14%);
 }
 
 body {
@@ -11,6 +11,22 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.layout {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.header {
+    margin-bottom: 1.5rem !important;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.footer {
+    margin-top: auto !important;
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -20,10 +36,26 @@ code {
 .bg-main {
     background-color: var(--color-primary) !important;
 }
+
 .bg-accent {
     background-color: var(--color-accent) !important;
     border: none !important;
     color: var(--color-primary) !important;
+}
+
+.badge {
+    background-color: var(--color-accent);
+    border-radius: 20px;
+    color: var(--color-primary);
+}
+
+.link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+.link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
 .logo {

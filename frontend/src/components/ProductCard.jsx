@@ -32,7 +32,10 @@ function ProductCard({ product }) {
                     <Card.Img variant="top" src={`${product.image}`} />
                 </Link>
                 <Card.Body>
-                    <Link to={`/store/products/${product._id}`}>
+                    <Link
+                        className="link"
+                        to={`/store/products/${product._id}`}
+                    >
                         <Card.Title style={{ color: 'black' }}>
                             {product.name}
                         </Card.Title>
